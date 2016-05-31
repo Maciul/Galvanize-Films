@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galvanize Films</title>
+ <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles2.css" charset="utf-8"
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  </head>
+  <body>
+    <header>
+      <h1> Galvanize Films</h1>
+    </header>
+    <main>
+      <h2> Add Movie </h2>
+      <form id="myForm" action="https://mighty-eyrie-15280.herokuapp.com/films" method="POST">
+        <label> Title </label>
+        <input name="title" id="title" type="text"/>
+        <label> Genre </label>
+        <input name="genre" id="genre" type="text"/>
+        <label> Description </label>
+        <textarea name="description" id="description"></textarea>
+        <label> Cover Picture </label>
+        <input name="pictureCover" id="picture" type="url"/>
+        <label> Rating </label>
+        <select name="rating" id="rating">
+          <option value="G">G</option>
+          <option value="PG-13">PG-13</option>
+          <option value="R">R</option>
+          <option value="NR">NR</option>
+          <option value="NC-17">NC-17</option>
+        </select>
+        <input type="submit" value="Add Movie">
+      </form>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>

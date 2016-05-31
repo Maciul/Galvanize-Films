@@ -1,3 +1,67 @@
-body {
-  background-color: blue;
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+h1 {
+  margin:0;
+}
+section {
+  width: 100%;
+}
+footer {
+  background-color: orange;
+  height: 10vh;
+}
+
+label, input, button {
+  display: block;
+  font-size: 20px;
+}
+
+input {
+  margin: 20px;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid white;
+  background-color: rgba(29, 29, 29, 0.9);
+}
+
+.main {
+  background-image: url(http://cdn.mos.techradar.com/art/Cinema/Dolby/Dolby%20Cinema-1200-80.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+
+}
+.description {
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  color: white;
+  align-items: center;
+}
+
+.text-description {
+  width: 40vw;
+  height: auto;
+  background-color: rgba(29, 29, 29, 0.9);
+  text-align: center;
+  padding: 5px;
+  border: 1px solid white;
+}
+.form {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
 }
