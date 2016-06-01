@@ -3,15 +3,13 @@ $( document ).ready(function() {
 
   $('#myForm').on('submit', function(event) {
   event.preventDefault();
-  var $section = $('section');
+  var $section = $('span');
   $.post('https://mighty-eyrie-15280.herokuapp.com/films', $(this).serialize()
   ).done(function(result) {
     $section.empty();
     $section.append(result.message);
     $section.fadeIn(500).delay(2000).fadeOut(500);
   }).fail(function(reject) {
-    console.log(reject)
-    console.log(typeof reject)
     $section.empty();
     $section.append(JSON.parse(reject.responseText).message);
     $section.fadeIn(500).delay(2000).fadeOut(500);
