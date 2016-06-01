@@ -14,3 +14,7 @@ input:not(:last-child), select:not(:last-child) {
 body {
   padding: 2rem;
 }
+section {
+  padding-top: 20px;
+  display: none;
+}
